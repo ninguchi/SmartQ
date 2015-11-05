@@ -1,0 +1,902 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA37A73F819653B62AB134DE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 410B042BA9FCD7781D425F1C /* libPods.a */; };
+		DC048E691A5BA0E600785794 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC048E681A5BA0E600785794 /* bg.jpg */; };
+		DC048E6F1A5BA7AC00785794 /* myQ.png in Resources */ = {isa = PBXBuildFile; fileRef = DC048E6E1A5BA7AC00785794 /* myQ.png */; };
+		DC0830731AB6EF1A00167CA7 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC0830721AB6EF1A00167CA7 /* Icon-60@2x.png */; };
+		DC0830751AB6EF5C00167CA7 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC0830741AB6EF5C00167CA7 /* Icon-60@3x.png */; };
+		DC1B66D31A5BE58200B75625 /* SmartQ - OrangeBG.png in Resources */ = {isa = PBXBuildFile; fileRef = DC1B66D21A5BE58200B75625 /* SmartQ - OrangeBG.png */; };
+		DC2B8BD61A5AB822001B7DE5 /* shoppingMall.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2B8BD51A5AB822001B7DE5 /* shoppingMall.png */; };
+		DC2B8BD81A5AB9E9001B7DE5 /* cog_02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2B8BD71A5AB9E9001B7DE5 /* cog_02@2x.png */; };
+		DC2B8BDA1A5ABAD7001B7DE5 /* pencil@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2B8BD91A5ABAD7001B7DE5 /* pencil@2x.png */; };
+		DC2B8BDC1A5AC015001B7DE5 /* meal-32.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2B8BDB1A5AC015001B7DE5 /* meal-32.png */; };
+		DC3114461AB5F80A00C3A152 /* dark orange button.png in Resources */ = {isa = PBXBuildFile; fileRef = DC3114451AB5F80A00C3A152 /* dark orange button.png */; };
+		DC5596901A65661E0001F63A /* Background_wood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC55968F1A65661E0001F63A /* Background_wood.jpg */; };
+		DC5979351A78929F00492CEB /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5979341A78929F00492CEB /* TodoItem.swift */; };
+		DC59A2081A7A24C900E077C0 /* DataConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC59A2071A7A24C900E077C0 /* DataConnection.swift */; };
+		DC59A20A1A7A24F800E077C0 /* UserStaff.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC59A2091A7A24F800E077C0 /* UserStaff.swift */; };
+		DC59A20C1A7A257700E077C0 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC59A20B1A7A257700E077C0 /* Customer.swift */; };
+		DC59A20F1A7A301000E077C0 /* CustomerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC59A20E1A7A301000E077C0 /* CustomerController.swift */; };
+		DC5D193A1AB68A50008782A2 /* MK.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC5D19391AB68A50008782A2 /* MK.jpg */; };
+		DC5D193C1AB68BA3008782A2 /* buttonBG1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC5D193B1AB68BA3008782A2 /* buttonBG1.jpg */; };
+		DC5D193E1AB68E23008782A2 /* buttonBG2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC5D193D1AB68E23008782A2 /* buttonBG2.jpg */; };
+		DC5D19401AB6926D008782A2 /* buttonBG3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC5D193F1AB6926D008782A2 /* buttonBG3.jpg */; };
+		DC5D19421AB6A118008782A2 /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5D19411AB6A118008782A2 /* location.png */; };
+		DC5ECE141A5A8D4B0054D040 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5ECE131A5A8D4B0054D040 /* SettingsTableViewController.swift */; };
+		DC5ECE161A5A93530054D040 /* SmartQ_Logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC5ECE151A5A93530054D040 /* SmartQ_Logo.jpg */; };
+		DC61DC411A7E2FA50047678F /* FlowerOrangeBckgd1.png in Resources */ = {isa = PBXBuildFile; fileRef = DC61DC401A7E2FA50047678F /* FlowerOrangeBckgd1.png */; };
+		DC64F0A21A4D0C480093D5F4 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC64F0A11A4D0C480093D5F4 /* ForgotPasswordViewController.swift */; };
+		DC64F0AA1A4D138F0093D5F4 /* CoCo ICHIBANYA.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC64F0A41A4D138F0093D5F4 /* CoCo ICHIBANYA.jpg */; };
+		DC64F0AB1A4D138F0093D5F4 /* Fuji.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC64F0A51A4D138F0093D5F4 /* Fuji.jpg */; };
+		DC64F0AD1A4D138F0093D5F4 /* OISHI.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC64F0A71A4D138F0093D5F4 /* OISHI.jpg */; };
+		DC64F0AE1A4D138F0093D5F4 /* Sizzler.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC64F0A81A4D138F0093D5F4 /* Sizzler.jpg */; };
+		DC64F0AF1A4D138F0093D5F4 /* Sukishi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC64F0A91A4D138F0093D5F4 /* Sukishi.jpg */; };
+		DC64F0B21A4D15ED0093D5F4 /* SmartQ_1.JPG in Resources */ = {isa = PBXBuildFile; fileRef = DC64F0B11A4D15ED0093D5F4 /* SmartQ_1.JPG */; };
+		DC6943FC1A8F98B30090121F /* smartqlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC6943FB1A8F98B30090121F /* smartqlist.plist */; };
+		DC6C669C1AB97B5800FE8D01 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6C669B1AB97B5800FE8D01 /* MessageUI.framework */; };
+		DC6D1A8B1AA9AA3100876AA6 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6D1A8A1AA9AA3100876AA6 /* WelcomeViewController.swift */; };
+		DC7EA8811A5BDF40003004C6 /* SmartQ_WhiteStroke.png in Resources */ = {isa = PBXBuildFile; fileRef = DC7EA8801A5BDF40003004C6 /* SmartQ_WhiteStroke.png */; };
+		DC80A2A91AAAD520003EF407 /* Yum Zaap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC80A2A81AAAD520003EF407 /* Yum Zaap.jpg */; };
+		DC81C7FC1AB1A8CE0065307C /* A.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC81C7F81AB1A8CE0065307C /* A.m4a */; };
+		DC81C7FD1AB1A8CE0065307C /* B.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC81C7F91AB1A8CE0065307C /* B.m4a */; };
+		DC81C7FE1AB1A8CE0065307C /* C.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC81C7FA1AB1A8CE0065307C /* C.m4a */; };
+		DC81C7FF1AB1A8CE0065307C /* D.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC81C7FB1AB1A8CE0065307C /* D.m4a */; };
+		DC81C80A1AB1A94B0065307C /* 0.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC81C8001AB1A94B0065307C /* 0.m4a */; };
+		DC81C80B1AB1A94B0065307C /* 1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC81C8011AB1A94B0065307C /* 1.m4a */; };
+		DC81C80C1AB1A94B0065307C /* 2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC81C8021AB1A94B0065307C /* 2.m4a */; };
+		DC81C80D1AB1A94B0065307C /* 3.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC81C8031AB1A94B0065307C /* 3.m4a */; };
+		DC81C80E1AB1A94B0065307C /* 4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC81C8041AB1A94B0065307C /* 4.m4a */; };
+		DC81C80F1AB1A94B0065307C /* 5.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC81C8051AB1A94B0065307C /* 5.m4a */; };
+		DC81C8101AB1A94B0065307C /* 6.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC81C8061AB1A94B0065307C /* 6.m4a */; };
+		DC81C8111AB1A94B0065307C /* 7.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC81C8071AB1A94B0065307C /* 7.m4a */; };
+		DC81C8121AB1A94B0065307C /* 8.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC81C8081AB1A94B0065307C /* 8.m4a */; };
+		DC81C8131AB1A94B0065307C /* 9.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC81C8091AB1A94B0065307C /* 9.m4a */; };
+		DC8258C11A80CDCE00A39E70 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8258C01A80CDCE00A39E70 /* Restaurant.swift */; };
+		DC8258C31A80CDDF00A39E70 /* Branch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8258C21A80CDDF00A39E70 /* Branch.swift */; };
+		DC8258C51A80CEC100A39E70 /* ShoppingMall.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8258C41A80CEC100A39E70 /* ShoppingMall.swift */; };
+		DC8258C71A80E36D00A39E70 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8258C61A80E36D00A39E70 /* Queue.swift */; };
+		DC8258C91A80EA1200A39E70 /* QueueController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8258C81A80EA1200A39E70 /* QueueController.swift */; };
+		DC8258CB1A80F01E00A39E70 /* RestaurantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8258CA1A80F01E00A39E70 /* RestaurantController.swift */; };
+		DC9C4BFF1ABA7236007EAD08 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC9C4BFE1ABA7236007EAD08 /* CoreLocation.framework */; };
+		DCA417841A5CE713004AFB98 /* CurrentQTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA417831A5CE713004AFB98 /* CurrentQTableViewCell.swift */; };
+		DCA816011AB5D21D00B4E2D8 /* orange_button_bg_big.png in Resources */ = {isa = PBXBuildFile; fileRef = DCA816001AB5D21D00B4E2D8 /* orange_button_bg_big.png */; };
+		DCA816051AB5DAD600B4E2D8 /* orange button.png in Resources */ = {isa = PBXBuildFile; fileRef = DCA816041AB5DAD600B4E2D8 /* orange button.png */; };
+		DCA816081AB5DCD800B4E2D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCA816061AB5DCD800B4E2D8 /* Main.storyboard */; };
+		DCAB5E291AB306D60059568D /* end.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DCAB5E281AB306D60059568D /* end.m4a */; };
+		DCB920481AAD9250009C50A3 /* CommonConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB920471AAD9250009C50A3 /* CommonConstants.swift */; };
+		DCBBED911A836BC100E9BBAF /* BranchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBBED901A836BC100E9BBAF /* BranchController.swift */; };
+		DCBBED931A83733000E9BBAF /* ShoppingMallController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBBED921A83733000E9BBAF /* ShoppingMallController.swift */; };
+		DCBBED951A84B26E00E9BBAF /* CurrentRunningNo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBBED941A84B26E00E9BBAF /* CurrentRunningNo.swift */; };
+		DCBBED971A84B33800E9BBAF /* CurrentRunningNoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBBED961A84B33800E9BBAF /* CurrentRunningNoController.swift */; };
+		DCD8BF9E1A8101CA00D0CDA8 /* Podfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = DCD8BF9C1A8101CA00D0CDA8 /* Podfile.lock */; };
+		DCD8BF9F1A8101CA00D0CDA8 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = DCD8BF9D1A8101CA00D0CDA8 /* Podfile */; };
+		FF1079671A3CADF50090EAC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1079661A3CADF50090EAC6 /* AppDelegate.swift */; };
+		FF10796A1A3CADF50090EAC6 /* SmartQ.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF1079681A3CADF50090EAC6 /* SmartQ.xcdatamodeld */; };
+		FF1079711A3CADF50090EAC6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF1079701A3CADF50090EAC6 /* Images.xcassets */; };
+		FF1079741A3CADF50090EAC6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1079721A3CADF50090EAC6 /* LaunchScreen.xib */; };
+		FF1079801A3CADF50090EAC6 /* SmartQTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF10797F1A3CADF50090EAC6 /* SmartQTests.swift */; };
+		FF44AE1F1A418F9A00C6DF40 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF44AE1E1A418F9A00C6DF40 /* ProfileTableViewController.swift */; };
+		FF44AE211A41905800C6DF40 /* EditProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF44AE201A41905800C6DF40 /* EditProfileTableViewController.swift */; };
+		FF76D9FD1A402E1A0009B473 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF76D9FC1A402E1A0009B473 /* LogInViewController.swift */; };
+		FF76D9FF1A402F8D0009B473 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF76D9FE1A402F8D0009B473 /* RegistrationViewController.swift */; };
+		FF76DA031A402FFD0009B473 /* RestDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF76DA021A402FFD0009B473 /* RestDetailTableViewController.swift */; };
+		FF76DA051A4034160009B473 /* MainRestListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF76DA041A4034160009B473 /* MainRestListTableViewController.swift */; };
+		FF76DA071A4038720009B473 /* BranchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF76DA061A4038720009B473 /* BranchDetailViewController.swift */; };
+		FF76DA091A403D310009B473 /* MainDeptListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF76DA081A403D310009B473 /* MainDeptListTableViewController.swift */; };
+		FF76DA0B1A403DCA0009B473 /* DeptDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF76DA0A1A403DCA0009B473 /* DeptDetailTableViewController.swift */; };
+		FF76DA0D1A40418C0009B473 /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF76DA0C1A40418C0009B473 /* BookingViewController.swift */; };
+		FF76DA0F1A4041A10009B473 /* ConfirmBookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF76DA0E1A4041A10009B473 /* ConfirmBookingViewController.swift */; };
+		FF76DA111A404FA20009B473 /* MyQueueTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF76DA101A404FA20009B473 /* MyQueueTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF10797A1A3CADF50090EAC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF1079591A3CADF50090EAC6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF1079601A3CADF50090EAC6;
+			remoteInfo = SmartQ;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		410B042BA9FCD7781D425F1C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		428BF083D46DF85BD0E44E73 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C221ADC1A8E716CD478DF6A9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		DC048E681A5BA0E600785794 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
+		DC048E6E1A5BA7AC00785794 /* myQ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myQ.png; sourceTree = "<group>"; };
+		DC0830721AB6EF1A00167CA7 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		DC0830741AB6EF5C00167CA7 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
+		DC1226CD1A77998A00DC4E27 /* SmartQ-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmartQ-Bridging-Header.h"; sourceTree = "<group>"; };
+		DC1B66D21A5BE58200B75625 /* SmartQ - OrangeBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SmartQ - OrangeBG.png"; sourceTree = "<group>"; };
+		DC2B8BD51A5AB822001B7DE5 /* shoppingMall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shoppingMall.png; sourceTree = "<group>"; };
+		DC2B8BD71A5AB9E9001B7DE5 /* cog_02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cog_02@2x.png"; sourceTree = "<group>"; };
+		DC2B8BD91A5ABAD7001B7DE5 /* pencil@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pencil@2x.png"; sourceTree = "<group>"; };
+		DC2B8BDB1A5AC015001B7DE5 /* meal-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "meal-32.png"; sourceTree = "<group>"; };
+		DC3114451AB5F80A00C3A152 /* dark orange button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dark orange button.png"; sourceTree = "<group>"; };
+		DC55968F1A65661E0001F63A /* Background_wood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Background_wood.jpg; sourceTree = "<group>"; };
+		DC5979341A78929F00492CEB /* TodoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
+		DC59A2071A7A24C900E077C0 /* DataConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataConnection.swift; sourceTree = "<group>"; };
+		DC59A2091A7A24F800E077C0 /* UserStaff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStaff.swift; sourceTree = "<group>"; };
+		DC59A20B1A7A257700E077C0 /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		DC59A20E1A7A301000E077C0 /* CustomerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerController.swift; sourceTree = "<group>"; };
+		DC5D19391AB68A50008782A2 /* MK.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MK.jpg; sourceTree = "<group>"; };
+		DC5D193B1AB68BA3008782A2 /* buttonBG1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = buttonBG1.jpg; sourceTree = "<group>"; };
+		DC5D193D1AB68E23008782A2 /* buttonBG2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = buttonBG2.jpg; sourceTree = "<group>"; };
+		DC5D193F1AB6926D008782A2 /* buttonBG3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = buttonBG3.jpg; sourceTree = "<group>"; };
+		DC5D19411AB6A118008782A2 /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
+		DC5ECE131A5A8D4B0054D040 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		DC5ECE151A5A93530054D040 /* SmartQ_Logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SmartQ_Logo.jpg; sourceTree = "<group>"; };
+		DC61DC401A7E2FA50047678F /* FlowerOrangeBckgd1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FlowerOrangeBckgd1.png; sourceTree = "<group>"; };
+		DC64F0A11A4D0C480093D5F4 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		DC64F0A41A4D138F0093D5F4 /* CoCo ICHIBANYA.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "CoCo ICHIBANYA.jpg"; sourceTree = "<group>"; };
+		DC64F0A51A4D138F0093D5F4 /* Fuji.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Fuji.jpg; sourceTree = "<group>"; };
+		DC64F0A71A4D138F0093D5F4 /* OISHI.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = OISHI.jpg; sourceTree = "<group>"; };
+		DC64F0A81A4D138F0093D5F4 /* Sizzler.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sizzler.jpg; sourceTree = "<group>"; };
+		DC64F0A91A4D138F0093D5F4 /* Sukishi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sukishi.jpg; sourceTree = "<group>"; };
+		DC64F0B11A4D15ED0093D5F4 /* SmartQ_1.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SmartQ_1.JPG; sourceTree = "<group>"; };
+		DC6943FB1A8F98B30090121F /* smartqlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = smartqlist.plist; sourceTree = "<group>"; };
+		DC6C669B1AB97B5800FE8D01 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		DC6D1A8A1AA9AA3100876AA6 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		DC7EA8801A5BDF40003004C6 /* SmartQ_WhiteStroke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SmartQ_WhiteStroke.png; sourceTree = "<group>"; };
+		DC80A2A81AAAD520003EF407 /* Yum Zaap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Yum Zaap.jpg"; sourceTree = "<group>"; };
+		DC81C7F81AB1A8CE0065307C /* A.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = A.m4a; sourceTree = "<group>"; };
+		DC81C7F91AB1A8CE0065307C /* B.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = B.m4a; sourceTree = "<group>"; };
+		DC81C7FA1AB1A8CE0065307C /* C.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = C.m4a; sourceTree = "<group>"; };
+		DC81C7FB1AB1A8CE0065307C /* D.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = D.m4a; sourceTree = "<group>"; };
+		DC81C8001AB1A94B0065307C /* 0.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 0.m4a; sourceTree = "<group>"; };
+		DC81C8011AB1A94B0065307C /* 1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.m4a; sourceTree = "<group>"; };
+		DC81C8021AB1A94B0065307C /* 2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2.m4a; sourceTree = "<group>"; };
+		DC81C8031AB1A94B0065307C /* 3.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3.m4a; sourceTree = "<group>"; };
+		DC81C8041AB1A94B0065307C /* 4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4.m4a; sourceTree = "<group>"; };
+		DC81C8051AB1A94B0065307C /* 5.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5.m4a; sourceTree = "<group>"; };
+		DC81C8061AB1A94B0065307C /* 6.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 6.m4a; sourceTree = "<group>"; };
+		DC81C8071AB1A94B0065307C /* 7.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 7.m4a; sourceTree = "<group>"; };
+		DC81C8081AB1A94B0065307C /* 8.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 8.m4a; sourceTree = "<group>"; };
+		DC81C8091AB1A94B0065307C /* 9.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 9.m4a; sourceTree = "<group>"; };
+		DC8258C01A80CDCE00A39E70 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		DC8258C21A80CDDF00A39E70 /* Branch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Branch.swift; sourceTree = "<group>"; };
+		DC8258C41A80CEC100A39E70 /* ShoppingMall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingMall.swift; sourceTree = "<group>"; };
+		DC8258C61A80E36D00A39E70 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		DC8258C81A80EA1200A39E70 /* QueueController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueController.swift; sourceTree = "<group>"; };
+		DC8258CA1A80F01E00A39E70 /* RestaurantController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantController.swift; sourceTree = "<group>"; };
+		DC9C4BFE1ABA7236007EAD08 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DCA417831A5CE713004AFB98 /* CurrentQTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentQTableViewCell.swift; sourceTree = "<group>"; };
+		DCA816001AB5D21D00B4E2D8 /* orange_button_bg_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orange_button_bg_big.png; sourceTree = "<group>"; };
+		DCA816041AB5DAD600B4E2D8 /* orange button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "orange button.png"; sourceTree = "<group>"; };
+		DCA816071AB5DCD800B4E2D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DCAB5E281AB306D60059568D /* end.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = end.m4a; sourceTree = "<group>"; };
+		DCB920471AAD9250009C50A3 /* CommonConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonConstants.swift; sourceTree = "<group>"; };
+		DCBBED901A836BC100E9BBAF /* BranchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BranchController.swift; sourceTree = "<group>"; };
+		DCBBED921A83733000E9BBAF /* ShoppingMallController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingMallController.swift; sourceTree = "<group>"; };
+		DCBBED941A84B26E00E9BBAF /* CurrentRunningNo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentRunningNo.swift; sourceTree = "<group>"; };
+		DCBBED961A84B33800E9BBAF /* CurrentRunningNoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentRunningNoController.swift; sourceTree = "<group>"; };
+		DCD8BF9C1A8101CA00D0CDA8 /* Podfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
+		DCD8BF9D1A8101CA00D0CDA8 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FF1079611A3CADF50090EAC6 /* SmartQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF1079651A3CADF50090EAC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF1079661A3CADF50090EAC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF1079691A3CADF50090EAC6 /* SmartQ.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmartQ.xcdatamodel; sourceTree = "<group>"; };
+		FF1079701A3CADF50090EAC6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FF1079731A3CADF50090EAC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FF1079791A3CADF50090EAC6 /* SmartQTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartQTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF10797E1A3CADF50090EAC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF10797F1A3CADF50090EAC6 /* SmartQTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartQTests.swift; sourceTree = "<group>"; };
+		FF44AE1E1A418F9A00C6DF40 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		FF44AE201A41905800C6DF40 /* EditProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileTableViewController.swift; sourceTree = "<group>"; };
+		FF76D9FC1A402E1A0009B473 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		FF76D9FE1A402F8D0009B473 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		FF76DA021A402FFD0009B473 /* RestDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestDetailTableViewController.swift; sourceTree = "<group>"; };
+		FF76DA041A4034160009B473 /* MainRestListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainRestListTableViewController.swift; sourceTree = "<group>"; };
+		FF76DA061A4038720009B473 /* BranchDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BranchDetailViewController.swift; sourceTree = "<group>"; };
+		FF76DA081A403D310009B473 /* MainDeptListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainDeptListTableViewController.swift; sourceTree = "<group>"; };
+		FF76DA0A1A403DCA0009B473 /* DeptDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeptDetailTableViewController.swift; sourceTree = "<group>"; };
+		FF76DA0C1A40418C0009B473 /* BookingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingViewController.swift; sourceTree = "<group>"; };
+		FF76DA0E1A4041A10009B473 /* ConfirmBookingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmBookingViewController.swift; sourceTree = "<group>"; };
+		FF76DA101A404FA20009B473 /* MyQueueTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyQueueTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF10795E1A3CADF50090EAC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC9C4BFF1ABA7236007EAD08 /* CoreLocation.framework in Frameworks */,
+				DC6C669C1AB97B5800FE8D01 /* MessageUI.framework in Frameworks */,
+				BA37A73F819653B62AB134DE /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1079761A3CADF50090EAC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03F1920AB8168FA17DC7CA3F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC9C4BFE1ABA7236007EAD08 /* CoreLocation.framework */,
+				DC6C669B1AB97B5800FE8D01 /* MessageUI.framework */,
+				410B042BA9FCD7781D425F1C /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6DF0CF543751CAB18CBC6618 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				428BF083D46DF85BD0E44E73 /* Pods.debug.xcconfig */,
+				C221ADC1A8E716CD478DF6A9 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DC0AE7BA1A59A82300651986 /* BarIcon */ = {
+			isa = PBXGroup;
+			children = (
+				DC0830721AB6EF1A00167CA7 /* Icon-60@2x.png */,
+				DC5D19411AB6A118008782A2 /* location.png */,
+				DC5D193F1AB6926D008782A2 /* buttonBG3.jpg */,
+				DC5D193B1AB68BA3008782A2 /* buttonBG1.jpg */,
+				DC3114451AB5F80A00C3A152 /* dark orange button.png */,
+				DC5D193D1AB68E23008782A2 /* buttonBG2.jpg */,
+				DCA816041AB5DAD600B4E2D8 /* orange button.png */,
+				DCA816001AB5D21D00B4E2D8 /* orange_button_bg_big.png */,
+				DC61DC401A7E2FA50047678F /* FlowerOrangeBckgd1.png */,
+				DC048E681A5BA0E600785794 /* bg.jpg */,
+				DC048E6E1A5BA7AC00785794 /* myQ.png */,
+				DC55968F1A65661E0001F63A /* Background_wood.jpg */,
+				DC2B8BDB1A5AC015001B7DE5 /* meal-32.png */,
+				DC2B8BD91A5ABAD7001B7DE5 /* pencil@2x.png */,
+				DC0830741AB6EF5C00167CA7 /* Icon-60@3x.png */,
+				DC2B8BD71A5AB9E9001B7DE5 /* cog_02@2x.png */,
+				DC2B8BD51A5AB822001B7DE5 /* shoppingMall.png */,
+			);
+			name = BarIcon;
+			sourceTree = "<group>";
+		};
+		DC1226CE1A779B3E00DC4E27 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DC8258C01A80CDCE00A39E70 /* Restaurant.swift */,
+				DC5979341A78929F00492CEB /* TodoItem.swift */,
+				DC59A2091A7A24F800E077C0 /* UserStaff.swift */,
+				DC59A20B1A7A257700E077C0 /* Customer.swift */,
+				DC8258C21A80CDDF00A39E70 /* Branch.swift */,
+				DC8258C41A80CEC100A39E70 /* ShoppingMall.swift */,
+				DC8258C61A80E36D00A39E70 /* Queue.swift */,
+				DCBBED941A84B26E00E9BBAF /* CurrentRunningNo.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		DC59A20D1A7A2FFC00E077C0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DC59A20E1A7A301000E077C0 /* CustomerController.swift */,
+				DC8258C81A80EA1200A39E70 /* QueueController.swift */,
+				DC8258CA1A80F01E00A39E70 /* RestaurantController.swift */,
+				DCBBED901A836BC100E9BBAF /* BranchController.swift */,
+				DCBBED921A83733000E9BBAF /* ShoppingMallController.swift */,
+				DCBBED961A84B33800E9BBAF /* CurrentRunningNoController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		DC64F0A31A4D138F0093D5F4 /* RestIcon */ = {
+			isa = PBXGroup;
+			children = (
+				DC80A2A81AAAD520003EF407 /* Yum Zaap.jpg */,
+				DC64F0A41A4D138F0093D5F4 /* CoCo ICHIBANYA.jpg */,
+				DC64F0A51A4D138F0093D5F4 /* Fuji.jpg */,
+				DC64F0A71A4D138F0093D5F4 /* OISHI.jpg */,
+				DC5D19391AB68A50008782A2 /* MK.jpg */,
+				DC64F0A81A4D138F0093D5F4 /* Sizzler.jpg */,
+				DC64F0A91A4D138F0093D5F4 /* Sukishi.jpg */,
+			);
+			path = RestIcon;
+			sourceTree = "<group>";
+		};
+		DC64F0B01A4D15ED0093D5F4 /* SmartQLogo */ = {
+			isa = PBXGroup;
+			children = (
+				DC7EA8801A5BDF40003004C6 /* SmartQ_WhiteStroke.png */,
+				DC5ECE151A5A93530054D040 /* SmartQ_Logo.jpg */,
+				DC1B66D21A5BE58200B75625 /* SmartQ - OrangeBG.png */,
+				DC64F0B11A4D15ED0093D5F4 /* SmartQ_1.JPG */,
+			);
+			path = SmartQLogo;
+			sourceTree = "<group>";
+		};
+		DC97D6811AB0A61E004F5823 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				DCAB5E281AB306D60059568D /* end.m4a */,
+				DC81C7F81AB1A8CE0065307C /* A.m4a */,
+				DC81C8001AB1A94B0065307C /* 0.m4a */,
+				DC81C8011AB1A94B0065307C /* 1.m4a */,
+				DC81C8021AB1A94B0065307C /* 2.m4a */,
+				DC81C8031AB1A94B0065307C /* 3.m4a */,
+				DC81C8041AB1A94B0065307C /* 4.m4a */,
+				DC81C8051AB1A94B0065307C /* 5.m4a */,
+				DC81C8061AB1A94B0065307C /* 6.m4a */,
+				DC81C8071AB1A94B0065307C /* 7.m4a */,
+				DC81C8081AB1A94B0065307C /* 8.m4a */,
+				DC81C8091AB1A94B0065307C /* 9.m4a */,
+				DC81C7F91AB1A8CE0065307C /* B.m4a */,
+				DC81C7FA1AB1A8CE0065307C /* C.m4a */,
+				DC81C7FB1AB1A8CE0065307C /* D.m4a */,
+			);
+			name = Sound;
+			sourceTree = "<group>";
+		};
+		DCCAA16E1A5E9DC900B318CA /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				DC5ECE131A5A8D4B0054D040 /* SettingsTableViewController.swift */,
+				FF44AE1E1A418F9A00C6DF40 /* ProfileTableViewController.swift */,
+				FF44AE201A41905800C6DF40 /* EditProfileTableViewController.swift */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		DCCAA16F1A5E9E1100B318CA /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				FF76D9FC1A402E1A0009B473 /* LogInViewController.swift */,
+				FF76D9FE1A402F8D0009B473 /* RegistrationViewController.swift */,
+				DC64F0A11A4D0C480093D5F4 /* ForgotPasswordViewController.swift */,
+			);
+			name = Authentication;
+			sourceTree = "<group>";
+		};
+		DCCAA1701A5E9E3200B318CA /* BookingQ */ = {
+			isa = PBXGroup;
+			children = (
+				DCA417831A5CE713004AFB98 /* CurrentQTableViewCell.swift */,
+				FF76DA041A4034160009B473 /* MainRestListTableViewController.swift */,
+				FF76DA021A402FFD0009B473 /* RestDetailTableViewController.swift */,
+				FF76DA081A403D310009B473 /* MainDeptListTableViewController.swift */,
+				FF76DA0A1A403DCA0009B473 /* DeptDetailTableViewController.swift */,
+				FF76DA061A4038720009B473 /* BranchDetailViewController.swift */,
+				FF76DA0C1A40418C0009B473 /* BookingViewController.swift */,
+				FF76DA0E1A4041A10009B473 /* ConfirmBookingViewController.swift */,
+				FF76DA101A404FA20009B473 /* MyQueueTableViewController.swift */,
+			);
+			name = BookingQ;
+			sourceTree = "<group>";
+		};
+		FF1079581A3CADF50090EAC6 = {
+			isa = PBXGroup;
+			children = (
+				DCD8BF9C1A8101CA00D0CDA8 /* Podfile.lock */,
+				DCD8BF9D1A8101CA00D0CDA8 /* Podfile */,
+				FF1079631A3CADF50090EAC6 /* SmartQ */,
+				FF10797C1A3CADF50090EAC6 /* SmartQTests */,
+				FF1079621A3CADF50090EAC6 /* Products */,
+				6DF0CF543751CAB18CBC6618 /* Pods */,
+				03F1920AB8168FA17DC7CA3F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FF1079621A3CADF50090EAC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF1079611A3CADF50090EAC6 /* SmartQ.app */,
+				FF1079791A3CADF50090EAC6 /* SmartQTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF1079631A3CADF50090EAC6 /* SmartQ */ = {
+			isa = PBXGroup;
+			children = (
+				DC97D6811AB0A61E004F5823 /* Sound */,
+				DC6D1A8A1AA9AA3100876AA6 /* WelcomeViewController.swift */,
+				DC59A20D1A7A2FFC00E077C0 /* Controller */,
+				DC1226CE1A779B3E00DC4E27 /* Model */,
+				DCCAA16F1A5E9E1100B318CA /* Authentication */,
+				DCCAA1701A5E9E3200B318CA /* BookingQ */,
+				DCCAA16E1A5E9DC900B318CA /* Settings */,
+				DC0AE7BA1A59A82300651986 /* BarIcon */,
+				DC64F0A31A4D138F0093D5F4 /* RestIcon */,
+				DC64F0B01A4D15ED0093D5F4 /* SmartQLogo */,
+				FF1079661A3CADF50090EAC6 /* AppDelegate.swift */,
+				DCA816061AB5DCD800B4E2D8 /* Main.storyboard */,
+				FF1079701A3CADF50090EAC6 /* Images.xcassets */,
+				FF1079721A3CADF50090EAC6 /* LaunchScreen.xib */,
+				FF1079681A3CADF50090EAC6 /* SmartQ.xcdatamodeld */,
+				FF1079641A3CADF50090EAC6 /* Supporting Files */,
+				DC1226CD1A77998A00DC4E27 /* SmartQ-Bridging-Header.h */,
+				DC59A2071A7A24C900E077C0 /* DataConnection.swift */,
+				DCB920471AAD9250009C50A3 /* CommonConstants.swift */,
+			);
+			path = SmartQ;
+			sourceTree = "<group>";
+		};
+		FF1079641A3CADF50090EAC6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF1079651A3CADF50090EAC6 /* Info.plist */,
+				DC6943FB1A8F98B30090121F /* smartqlist.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF10797C1A3CADF50090EAC6 /* SmartQTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF10797F1A3CADF50090EAC6 /* SmartQTests.swift */,
+				FF10797D1A3CADF50090EAC6 /* Supporting Files */,
+			);
+			path = SmartQTests;
+			sourceTree = "<group>";
+		};
+		FF10797D1A3CADF50090EAC6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF10797E1A3CADF50090EAC6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF1079601A3CADF50090EAC6 /* SmartQ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF1079831A3CADF50090EAC6 /* Build configuration list for PBXNativeTarget "SmartQ" */;
+			buildPhases = (
+				656E3F8051C0D37AC1F90881 /* Check Pods Manifest.lock */,
+				FF10795D1A3CADF50090EAC6 /* Sources */,
+				FF10795E1A3CADF50090EAC6 /* Frameworks */,
+				FF10795F1A3CADF50090EAC6 /* Resources */,
+				A5C1B1008A722F516AB0F4B1 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartQ;
+			productName = SmartQ;
+			productReference = FF1079611A3CADF50090EAC6 /* SmartQ.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF1079781A3CADF50090EAC6 /* SmartQTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF1079861A3CADF50090EAC6 /* Build configuration list for PBXNativeTarget "SmartQTests" */;
+			buildPhases = (
+				FF1079751A3CADF50090EAC6 /* Sources */,
+				FF1079761A3CADF50090EAC6 /* Frameworks */,
+				FF1079771A3CADF50090EAC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF10797B1A3CADF50090EAC6 /* PBXTargetDependency */,
+			);
+			name = SmartQTests;
+			productName = SmartQTests;
+			productReference = FF1079791A3CADF50090EAC6 /* SmartQTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF1079591A3CADF50090EAC6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = BlueSeed;
+				TargetAttributes = {
+					FF1079601A3CADF50090EAC6 = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = PP64RT7P8Z;
+					};
+					FF1079781A3CADF50090EAC6 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = FF1079601A3CADF50090EAC6;
+					};
+				};
+			};
+			buildConfigurationList = FF10795C1A3CADF50090EAC6 /* Build configuration list for PBXProject "SmartQ" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF1079581A3CADF50090EAC6;
+			productRefGroup = FF1079621A3CADF50090EAC6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF1079601A3CADF50090EAC6 /* SmartQ */,
+				FF1079781A3CADF50090EAC6 /* SmartQTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF10795F1A3CADF50090EAC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC81C8111AB1A94B0065307C /* 7.m4a in Resources */,
+				DC3114461AB5F80A00C3A152 /* dark orange button.png in Resources */,
+				DC81C80D1AB1A94B0065307C /* 3.m4a in Resources */,
+				DC2B8BD61A5AB822001B7DE5 /* shoppingMall.png in Resources */,
+				DC81C8131AB1A94B0065307C /* 9.m4a in Resources */,
+				DC81C7FC1AB1A8CE0065307C /* A.m4a in Resources */,
+				DCAB5E291AB306D60059568D /* end.m4a in Resources */,
+				DC81C80F1AB1A94B0065307C /* 5.m4a in Resources */,
+				DC2B8BD81A5AB9E9001B7DE5 /* cog_02@2x.png in Resources */,
+				DC81C7FE1AB1A8CE0065307C /* C.m4a in Resources */,
+				DCD8BF9F1A8101CA00D0CDA8 /* Podfile in Resources */,
+				DC0830751AB6EF5C00167CA7 /* Icon-60@3x.png in Resources */,
+				DC81C7FF1AB1A8CE0065307C /* D.m4a in Resources */,
+				DC81C80C1AB1A94B0065307C /* 2.m4a in Resources */,
+				DC81C80B1AB1A94B0065307C /* 1.m4a in Resources */,
+				DC64F0AB1A4D138F0093D5F4 /* Fuji.jpg in Resources */,
+				DC64F0AF1A4D138F0093D5F4 /* Sukishi.jpg in Resources */,
+				DC5D19421AB6A118008782A2 /* location.png in Resources */,
+				DC81C80A1AB1A94B0065307C /* 0.m4a in Resources */,
+				DC7EA8811A5BDF40003004C6 /* SmartQ_WhiteStroke.png in Resources */,
+				DC5D193E1AB68E23008782A2 /* buttonBG2.jpg in Resources */,
+				DCD8BF9E1A8101CA00D0CDA8 /* Podfile.lock in Resources */,
+				DC81C7FD1AB1A8CE0065307C /* B.m4a in Resources */,
+				DC5D193A1AB68A50008782A2 /* MK.jpg in Resources */,
+				DC0830731AB6EF1A00167CA7 /* Icon-60@2x.png in Resources */,
+				FF1079741A3CADF50090EAC6 /* LaunchScreen.xib in Resources */,
+				FF1079711A3CADF50090EAC6 /* Images.xcassets in Resources */,
+				DC5D193C1AB68BA3008782A2 /* buttonBG1.jpg in Resources */,
+				DCA816081AB5DCD800B4E2D8 /* Main.storyboard in Resources */,
+				DC2B8BDA1A5ABAD7001B7DE5 /* pencil@2x.png in Resources */,
+				DCA816011AB5D21D00B4E2D8 /* orange_button_bg_big.png in Resources */,
+				DC81C80E1AB1A94B0065307C /* 4.m4a in Resources */,
+				DC64F0AA1A4D138F0093D5F4 /* CoCo ICHIBANYA.jpg in Resources */,
+				DC61DC411A7E2FA50047678F /* FlowerOrangeBckgd1.png in Resources */,
+				DC80A2A91AAAD520003EF407 /* Yum Zaap.jpg in Resources */,
+				DC5596901A65661E0001F63A /* Background_wood.jpg in Resources */,
+				DC6943FC1A8F98B30090121F /* smartqlist.plist in Resources */,
+				DCA816051AB5DAD600B4E2D8 /* orange button.png in Resources */,
+				DC048E691A5BA0E600785794 /* bg.jpg in Resources */,
+				DC81C8101AB1A94B0065307C /* 6.m4a in Resources */,
+				DC81C8121AB1A94B0065307C /* 8.m4a in Resources */,
+				DC64F0AE1A4D138F0093D5F4 /* Sizzler.jpg in Resources */,
+				DC5ECE161A5A93530054D040 /* SmartQ_Logo.jpg in Resources */,
+				DC64F0AD1A4D138F0093D5F4 /* OISHI.jpg in Resources */,
+				DC048E6F1A5BA7AC00785794 /* myQ.png in Resources */,
+				DC64F0B21A4D15ED0093D5F4 /* SmartQ_1.JPG in Resources */,
+				DC2B8BDC1A5AC015001B7DE5 /* meal-32.png in Resources */,
+				DC1B66D31A5BE58200B75625 /* SmartQ - OrangeBG.png in Resources */,
+				DC5D19401AB6926D008782A2 /* buttonBG3.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1079771A3CADF50090EAC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		656E3F8051C0D37AC1F90881 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A5C1B1008A722F516AB0F4B1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF10795D1A3CADF50090EAC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCBBED971A84B33800E9BBAF /* CurrentRunningNoController.swift in Sources */,
+				FF1079671A3CADF50090EAC6 /* AppDelegate.swift in Sources */,
+				FF10796A1A3CADF50090EAC6 /* SmartQ.xcdatamodeld in Sources */,
+				FF76DA111A404FA20009B473 /* MyQueueTableViewController.swift in Sources */,
+				FF76DA0B1A403DCA0009B473 /* DeptDetailTableViewController.swift in Sources */,
+				DCBBED951A84B26E00E9BBAF /* CurrentRunningNo.swift in Sources */,
+				FF44AE1F1A418F9A00C6DF40 /* ProfileTableViewController.swift in Sources */,
+				DCBBED911A836BC100E9BBAF /* BranchController.swift in Sources */,
+				DC8258C91A80EA1200A39E70 /* QueueController.swift in Sources */,
+				DC59A20A1A7A24F800E077C0 /* UserStaff.swift in Sources */,
+				DC5ECE141A5A8D4B0054D040 /* SettingsTableViewController.swift in Sources */,
+				DC59A20F1A7A301000E077C0 /* CustomerController.swift in Sources */,
+				FF76DA051A4034160009B473 /* MainRestListTableViewController.swift in Sources */,
+				DC8258C11A80CDCE00A39E70 /* Restaurant.swift in Sources */,
+				FF76D9FF1A402F8D0009B473 /* RegistrationViewController.swift in Sources */,
+				FF76DA031A402FFD0009B473 /* RestDetailTableViewController.swift in Sources */,
+				FF76DA0F1A4041A10009B473 /* ConfirmBookingViewController.swift in Sources */,
+				DCBBED931A83733000E9BBAF /* ShoppingMallController.swift in Sources */,
+				DC8258C31A80CDDF00A39E70 /* Branch.swift in Sources */,
+				DC5979351A78929F00492CEB /* TodoItem.swift in Sources */,
+				DC64F0A21A4D0C480093D5F4 /* ForgotPasswordViewController.swift in Sources */,
+				DC59A2081A7A24C900E077C0 /* DataConnection.swift in Sources */,
+				DC8258C71A80E36D00A39E70 /* Queue.swift in Sources */,
+				FF76DA091A403D310009B473 /* MainDeptListTableViewController.swift in Sources */,
+				DCB920481AAD9250009C50A3 /* CommonConstants.swift in Sources */,
+				DC6D1A8B1AA9AA3100876AA6 /* WelcomeViewController.swift in Sources */,
+				DC8258C51A80CEC100A39E70 /* ShoppingMall.swift in Sources */,
+				DC59A20C1A7A257700E077C0 /* Customer.swift in Sources */,
+				DC8258CB1A80F01E00A39E70 /* RestaurantController.swift in Sources */,
+				DCA417841A5CE713004AFB98 /* CurrentQTableViewCell.swift in Sources */,
+				FF76DA071A4038720009B473 /* BranchDetailViewController.swift in Sources */,
+				FF44AE211A41905800C6DF40 /* EditProfileTableViewController.swift in Sources */,
+				FF76DA0D1A40418C0009B473 /* BookingViewController.swift in Sources */,
+				FF76D9FD1A402E1A0009B473 /* LogInViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1079751A3CADF50090EAC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF1079801A3CADF50090EAC6 /* SmartQTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF10797B1A3CADF50090EAC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF1079601A3CADF50090EAC6 /* SmartQ */;
+			targetProxy = FF10797A1A3CADF50090EAC6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DCA816061AB5DCD800B4E2D8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCA816071AB5DCD800B4E2D8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF1079721A3CADF50090EAC6 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF1079731A3CADF50090EAC6 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF1079811A3CADF50090EAC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF1079821A3CADF50090EAC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF1079841A3CADF50090EAC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 428BF083D46DF85BD0E44E73 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = SmartQ/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SmartQ/SmartQ-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		FF1079851A3CADF50090EAC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C221ADC1A8E716CD478DF6A9 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = SmartQ/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SmartQ/SmartQ-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		FF1079871A3CADF50090EAC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SmartQTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartQ.app/SmartQ";
+			};
+			name = Debug;
+		};
+		FF1079881A3CADF50090EAC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SmartQTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartQ.app/SmartQ";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF10795C1A3CADF50090EAC6 /* Build configuration list for PBXProject "SmartQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF1079811A3CADF50090EAC6 /* Debug */,
+				FF1079821A3CADF50090EAC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF1079831A3CADF50090EAC6 /* Build configuration list for PBXNativeTarget "SmartQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF1079841A3CADF50090EAC6 /* Debug */,
+				FF1079851A3CADF50090EAC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF1079861A3CADF50090EAC6 /* Build configuration list for PBXNativeTarget "SmartQTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF1079871A3CADF50090EAC6 /* Debug */,
+				FF1079881A3CADF50090EAC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FF1079681A3CADF50090EAC6 /* SmartQ.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FF1079691A3CADF50090EAC6 /* SmartQ.xcdatamodel */,
+			);
+			currentVersion = FF1079691A3CADF50090EAC6 /* SmartQ.xcdatamodel */;
+			path = SmartQ.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FF1079591A3CADF50090EAC6 /* Project object */;
+}

@@ -1,0 +1,1431 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="cep-BC-Xxf">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome View Controller-->
+        <scene sceneID="3No-kf-c6F">
+            <objects>
+                <viewController id="cep-BC-Xxf" customClass="WelcomeViewController" customModule="SmartQ" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uhy-JU-eoZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="EVu-w0-Web"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OUW-LI-W2V">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <segue destination="1qO-8L-efl" kind="modal" identifier="loginSegue" id="K1a-wk-kY9"/>
+                        <segue destination="Olu-Up-TSO" kind="modal" identifier="homeSegue" id="0NA-7O-49M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a0k-sq-L8Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="427" y="-259"/>
+        </scene>
+        <!--Log In View Controller-->
+        <scene sceneID="Mt3-Ij-bxX">
+            <objects>
+                <viewController id="1qO-8L-efl" customClass="LogInViewController" customModule="SmartQ" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3C8-QL-wP5"/>
+                        <viewControllerLayoutGuide type="bottom" id="5OB-cq-aYH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BjS-OF-YTZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2hq-Ep-jjw">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="1"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3WS-dt-ccI">
+                                <rect key="frame" x="64" y="312" width="192" height="29"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="19"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleColor" red="0.32475142045454541" green="0.17797908743833388" blue="0.098867191632031087" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="logInMethod:" destination="1qO-8L-efl" eventType="touchUpInside" id="UoA-xO-ncC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WHm-i2-Uhi">
+                                <rect key="frame" x="39" y="456" width="242" height="44"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="17"/>
+                                <state key="normal" title="Sign Up for Smart Q">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ZNI-3v-zkl" kind="modal" identifier="signUpSegue" id="46A-If-MAa"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uoc-aH-jwD">
+                                <rect key="frame" x="28" y="200" width="264" height="30"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WYG-ds-b6e">
+                                <rect key="frame" x="28" y="247" width="264" height="30"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWw-E1-Ccl">
+                                <rect key="frame" x="76" y="508" width="168" height="30"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="17"/>
+                                <state key="normal" title="Forget Password">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="OCl-PX-ZSG" kind="modal" identifier="forgotSegue" id="Lqb-jO-JQK"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SmartQ - OrangeBG.png" translatesAutoresizingMaskIntoConstraints="NO" id="EDN-ip-Hep">
+                                <rect key="frame" x="73" y="51" width="174" height="113"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92156862750000001" green="0.59949934410000005" blue="0.31566567750000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HTA-HE-No4"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="buttonForgotPass" destination="lWw-E1-Ccl" id="GZR-nN-aR6"/>
+                        <outlet property="buttonLogIn" destination="3WS-dt-ccI" id="g7u-ag-wv9"/>
+                        <outlet property="buttonSignUp" destination="WHm-i2-Uhi" id="cDf-48-oRZ"/>
+                        <outlet property="txtPassword" destination="WYG-ds-b6e" id="YN5-5Z-IlF"/>
+                        <outlet property="txtUsername" destination="uoc-aH-jwD" id="BhL-TQ-ejx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zDO-ts-wg0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="8sy-qP-lQW" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="860" y="-259"/>
+        </scene>
+        <!--Forgot Password View Controller-->
+        <scene sceneID="hZ9-Cb-rKb">
+            <objects>
+                <viewController id="OCl-PX-ZSG" customClass="ForgotPasswordViewController" customModule="SmartQ" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PN4-jG-anr"/>
+                        <viewControllerLayoutGuide type="bottom" id="yHS-vu-1D5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VxX-1g-ecJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2L6-rb-Lyk">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fFf-cF-RTe">
+                                <rect key="frame" x="16" y="128" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your password already sent to your inbox." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wat-hl-md4">
+                                <rect key="frame" x="16" y="99" width="323" height="21"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="11"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WKt-dA-PYH">
+                                <rect key="frame" x="182" y="200" width="94" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="17"/>
+                                <state key="normal" title="Confirm">
+                                    <color key="titleColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="forgotPassMethod:" destination="OCl-PX-ZSG" eventType="touchUpInside" id="tEs-Xg-QLl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Forgot Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9H-e8-YYY">
+                                <rect key="frame" x="54" y="47" width="212" height="41"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="20"/>
+                                <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjd-sD-Ecv">
+                                <rect key="frame" x="45" y="200" width="94" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="17"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.32475142045454541" green="0.17797908743833388" blue="0.098867191632031087" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="O54-bm-Bub" kind="unwind" unwindAction="backToLogin:" id="KBP-uC-iFX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="buttonBack" destination="fjd-sD-Ecv" id="swI-B8-aQC"/>
+                        <outlet property="buttonConfirm" destination="WKt-dA-PYH" id="jlX-0A-Gai"/>
+                        <outlet property="labelResult" destination="Wat-hl-md4" id="Dvn-ka-eFK"/>
+                        <outlet property="txtEmail" destination="fFf-cF-RTe" id="nRG-JC-xn0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Osk-lW-xxW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="O54-bm-Bub" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1271" y="23"/>
+        </scene>
+        <!--Main Rest List Table View Controller-->
+        <scene sceneID="WwI-3u-BBX">
+            <objects>
+                <tableViewController title="Main Rest List Table View Controller" id="djJ-mF-9b7" customClass="MainRestListTableViewController" customModule="SmartQ" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" id="4dZ-kB-5cW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" id="1wI-0T-CpO">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1wI-0T-CpO" id="9Rg-pa-o5i">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="wQ4-wb-GUb" kind="push" identifier="restBranchSegue" id="nbH-4A-wR8"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="djJ-mF-9b7" id="Q2f-ys-nm4"/>
+                            <outlet property="delegate" destination="djJ-mF-9b7" id="rW8-dc-ayd"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Restaurant" id="EcG-4g-e9M">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="g83-LP-jKs"/>
+                    </navigationItem>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Qk-uK-ppT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2112" y="414"/>
+        </scene>
+        <!--Rest Detail Table View Controller-->
+        <scene sceneID="quu-NB-fK8">
+            <objects>
+                <tableViewController title="Rest Detail Table View Controller" id="wQ4-wb-GUb" customClass="RestDetailTableViewController" customModule="SmartQ" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="lcH-SG-AZI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="gda-TW-gXy">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="wQ4-wb-GUb" id="mFw-eG-WBF"/>
+                            </connections>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" id="Nay-S0-bne">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Nay-S0-bne" id="vdg-ry-3zv">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="MUV-dw-fot" kind="push" identifier="branchRestDetailSegue" trigger="accessoryAction" id="Bkl-QX-FXT"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="wQ4-wb-GUb" id="7iO-Iu-XlN"/>
+                            <outlet property="delegate" destination="wQ4-wb-GUb" id="eSa-vc-Apa"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="FUJI" id="8Y5-lu-s8t">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="xPM-sY-JsK"/>
+                    </navigationItem>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="searchBar" destination="gda-TW-gXy" id="JYa-B7-WZA"/>
+                        <outlet property="searchBranchList" destination="lcH-SG-AZI" id="UqH-0X-sS2"/>
+                        <outlet property="searchDisplayController" destination="V9G-X0-ZzX" id="NbS-mX-kzd"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rWu-Z7-uF6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="V9G-X0-ZzX">
+                    <connections>
+                        <outlet property="delegate" destination="wQ4-wb-GUb" id="c1u-1e-IdT"/>
+                        <outlet property="searchBar" destination="gda-TW-gXy" id="VkQ-sv-45i"/>
+                        <outlet property="searchContentsController" destination="wQ4-wb-GUb" id="3hx-Zx-vcK"/>
+                        <outlet property="searchResultsDataSource" destination="wQ4-wb-GUb" id="2fz-Bk-fNI"/>
+                        <outlet property="searchResultsDelegate" destination="wQ4-wb-GUb" id="6iF-A0-4bN"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="2532" y="414"/>
+        </scene>
+        <!--Branch Detail View Controller-->
+        <scene sceneID="rJ0-JW-Rpc">
+            <objects>
+                <viewController title="Branch Detail View Controller" id="MUV-dw-fot" customClass="BranchDetailViewController" customModule="SmartQ" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="q9P-pw-MlQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="J6s-4X-5w8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rfO-EG-7SX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Siam Paragon" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BjV-O0-I0p">
+                                <rect key="frame" x="112" y="87" width="217" height="21"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="20"/>
+                                <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GF, Siam Paragon" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLW-bv-xLc">
+                                <rect key="frame" x="137" y="111" width="211" height="27"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="13"/>
+                                <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10:30 AM - 21:30 PM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zap-xx-iyV">
+                                <rect key="frame" x="137" y="130" width="199" height="21"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="13"/>
+                                <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="40" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ckZ-4l-gKz">
+                                <rect key="frame" x="13" y="247" width="288" height="192"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="40" id="oxJ-I2-dKH" customClass="CurrentQTableViewCell" customModule="SmartQ" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="235" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oxJ-I2-dKH" id="TVe-wc-H0K">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Type A" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDR-7l-gH8">
+                                                    <rect key="frame" x="10" y="11" width="97" height="21"/>
+                                                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="14"/>
+                                                    <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CfN-1g-wIA">
+                                                    <rect key="frame" x="113" y="11" width="52" height="21"/>
+                                                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="14"/>
+                                                    <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Meu-U8-AmX">
+                                                    <rect key="frame" x="199" y="9" width="52" height="21"/>
+                                                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="14"/>
+                                                    <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="labelCurrentQ" destination="CfN-1g-wIA" id="6oI-tV-J8U"/>
+                                            <outlet property="labelNoOfWaiting" destination="Meu-U8-AmX" id="yFV-QO-yBs"/>
+                                            <outlet property="labelTableType" destination="HDR-7l-gH8" id="GKz-5B-ln0"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Table" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZe-Tr-cR3">
+                                <rect key="frame" x="25" y="218" width="60" height="21"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="16"/>
+                                <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No of Waiting" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="app-uF-7Id">
+                                <rect key="frame" x="199" y="218" width="108" height="21"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="14"/>
+                                <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Q" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3j-gs-Y64">
+                                <rect key="frame" x="116" y="218" width="75" height="21"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="14"/>
+                                <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="location.png" translatesAutoresizingMaskIntoConstraints="NO" id="nGW-Ou-mej">
+                                <rect key="frame" x="112" y="117" width="20" height="24"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="FUJI" id="Wt7-SL-My2">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="gP2-8P-Cep"/>
+                        <barButtonItem key="rightBarButtonItem" title="Continue" id="MOh-h8-VA6">
+                            <color key="tintColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="ZiY-Eu-ZUq" kind="push" identifier="bookingSegue" id="rgw-5Z-83R"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="labelBranchName" destination="BjV-O0-I0p" id="Djh-qw-Ujm"/>
+                        <outlet property="labelLocation" destination="aLW-bv-xLc" id="auI-dY-7ua"/>
+                        <outlet property="labelServiceTime" destination="zap-xx-iyV" id="OkV-d3-cUS"/>
+                        <outlet property="tableCurrentQ" destination="ckZ-4l-gKz" id="HBK-c4-7nA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Z3-5u-ghz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3065" y="703"/>
+        </scene>
+        <!--Booking View Controller-->
+        <scene sceneID="aos-wn-7Nv">
+            <objects>
+                <viewController title="Booking View Controller" id="ZiY-Eu-ZUq" customClass="BookingViewController" customModule="SmartQ" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PqA-r3-urq"/>
+                        <viewControllerLayoutGuide type="bottom" id="NEk-uw-qFc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="muh-lj-qM9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Siam Paragon" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeX-jJ-7zE">
+                                <rect key="frame" x="112" y="87" width="213" height="21"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="20"/>
+                                <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GF, Siam Paragon" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mmr-v2-WpJ">
+                                <rect key="frame" x="137" y="111" width="213" height="21"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="13"/>
+                                <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Number of Person: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iH8-cu-W0a">
+                                <rect key="frame" x="16" y="200" width="150" height="21"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="14"/>
+                                <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Have Children?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NH6-OR-bOn">
+                                <rect key="frame" x="31" y="288" width="118" height="21"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="14"/>
+                                <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Special Request:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bW7-f0-iQk">
+                                <rect key="frame" x="16" y="244" width="133" height="21"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="14"/>
+                                <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Have Wheelchair?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9f-OF-5Xv">
+                                <rect key="frame" x="31" y="334" width="139" height="21"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="14"/>
+                                <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bFY-2l-s2A">
+                                <rect key="frame" x="230" y="283" width="51" height="31"/>
+                                <color key="onTintColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="switchChildMethod:" destination="ZiY-Eu-ZUq" eventType="valueChanged" id="BHc-ea-bYT"/>
+                                    <action selector="switchChildren" destination="ZiY-Eu-ZUq" eventType="valueChanged" id="2Wr-93-KT6"/>
+                                </connections>
+                            </switch>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="40" translatesAutoresizingMaskIntoConstraints="NO" id="9pZ-uK-tdf">
+                                <rect key="frame" x="212" y="196" width="94" height="29"/>
+                                <connections>
+                                    <action selector="stepNumber:" destination="ZiY-Eu-ZUq" eventType="valueChanged" id="p0Y-ln-edi"/>
+                                </connections>
+                            </stepper>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ycD-fo-9d3">
+                                <rect key="frame" x="230" y="329" width="51" height="31"/>
+                                <color key="onTintColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="switchWheelMethod:" destination="ZiY-Eu-ZUq" eventType="valueChanged" id="kyM-Ry-TBb"/>
+                                    <action selector="switchWheelchair" destination="ZiY-Eu-ZUq" eventType="valueChanged" id="y1b-qg-Lnx"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9n-fS-aMQ">
+                                <rect key="frame" x="150" y="198" width="52" height="25"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="14"/>
+                                <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FTi-vW-LNq">
+                                <rect key="frame" x="70" y="393" width="180" height="40"/>
+                                <color key="backgroundColor" red="0.9460029987373737" green="0.9460029987373737" blue="0.9460029987373737" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="17"/>
+                                <state key="normal" title="Confirm">
+                                    <color key="titleColor" red="0.32475142045454541" green="0.17797908743833388" blue="0.098867191632031087" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="confirmBookingMethod:" destination="ZiY-Eu-ZUq" eventType="touchUpInside" id="TIN-y2-eS7"/>
+                                    <segue destination="PR7-YP-9lE" kind="push" identifier="confirmBookingSegue" id="r9D-nD-ogm"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="location.png" translatesAutoresizingMaskIntoConstraints="NO" id="jkd-lI-fN8">
+                                <rect key="frame" x="112" y="117" width="20" height="24"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10:30 AM - 21:30 PM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJ9-sk-EUW">
+                                <rect key="frame" x="137" y="130" width="200" height="21"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="13"/>
+                                <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="FUJI" id="e57-x8-MUE">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="cqn-XC-QY8"/>
+                    </navigationItem>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="buttonConfirm" destination="FTi-vW-LNq" id="Don-vU-U0V"/>
+                        <outlet property="labelBranchName" destination="BeX-jJ-7zE" id="c8a-9c-ufW"/>
+                        <outlet property="labelLocation" destination="Mmr-v2-WpJ" id="Awy-oR-WQQ"/>
+                        <outlet property="labelNumber" destination="D9n-fS-aMQ" id="rWi-hU-euk"/>
+                        <outlet property="labelServiceTime" destination="TJ9-sk-EUW" id="xO8-rG-bcj"/>
+                        <outlet property="stepperNumber" destination="9pZ-uK-tdf" id="KK9-FT-FUm"/>
+                        <outlet property="switchChildren" destination="bFY-2l-s2A" id="T4Z-C5-Mqw"/>
+                        <outlet property="switchWheelchair" destination="ycD-fo-9d3" id="kKS-yG-UaW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bw7-IE-bKg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3428" y="704"/>
+        </scene>
+        <!--Confirm Booking Q-->
+        <scene sceneID="6nz-sl-Flg">
+            <objects>
+                <viewController id="PR7-YP-9lE" customClass="ConfirmBookingViewController" customModule="SmartQ" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vhj-Yy-rYM"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jxj-4t-fxH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aUR-s9-Y4S">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="queue(s)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beG-cX-w8M">
+                                <rect key="frame" x="214" y="405" width="67" height="21"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="13"/>
+                                <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uH8-v5-MTR">
+                                <rect key="frame" x="177" y="405" width="39" height="21"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="13"/>
+                                <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Remaining Queue" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zpm-Yz-aqr">
+                                <rect key="frame" x="39" y="405" width="115" height="21"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="13"/>
+                                <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7nn-WZ-cGa">
+                                <rect key="frame" x="111" y="460" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.94600299870000004" green="0.94600299870000004" blue="0.94600299870000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="17"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="completeBookingMethod:" destination="PR7-YP-9lE" eventType="touchUpInside" id="mhX-lj-bxp"/>
+                                    <action selector="doneMethod:" destination="PR7-YP-9lE" eventType="touchUpInside" id="wXd-hZ-6k2"/>
+                                    <segue destination="ebM-89-8w6" kind="unwind" unwindAction="doneFromConfirmBookingMethod:" id="cdt-oe-q7v"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0b9-0v-4Ly">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="UzC-is-iol"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Estimated Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPP-To-1vs">
+                                <rect key="frame" x="39" y="427" width="98" height="21"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="13"/>
+                                <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="15" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6kU-fy-quZ">
+                                <rect key="frame" x="177" y="427" width="39" height="21"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="13"/>
+                                <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="buttonBG3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="eA6-4i-rb9">
+                                <rect key="frame" x="68" y="170" width="180" height="105"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A19" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WbW-Ms-Ev0">
+                                <rect key="frame" x="128" y="195" width="89" height="45"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="35"/>
+                                <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guV-gV-EYw">
+                                <rect key="frame" x="135" y="236" width="26" height="21"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="13"/>
+                                <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="People)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XM6-oo-zT2">
+                                <rect key="frame" x="158" y="236" width="58" height="21"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="13"/>
+                                <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(For" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDi-kh-gRV">
+                                <rect key="frame" x="113" y="236" width="30" height="21"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="13"/>
+                                <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="buttonBG3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="S64-zO-QeF">
+                                <rect key="frame" x="68" y="283" width="180" height="102"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(Confirm Code)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ex-F0-eWu">
+                                <rect key="frame" x="113" y="344" width="117" height="21"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="13"/>
+                                <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="123456" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cR-6e-d2U">
+                                <rect key="frame" x="120" y="299" width="130" height="49"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="25"/>
+                                <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="mins" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z5X-we-v3e">
+                                <rect key="frame" x="214" y="427" width="39" height="21"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="13"/>
+                                <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Siam Paragon" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcC-Dm-pEb">
+                                <rect key="frame" x="112" y="87" width="209" height="21"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="20"/>
+                                <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GF, Siam Paragon" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="15g-gv-xUW">
+                                <rect key="frame" x="137" y="111" width="200" height="21"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="12"/>
+                                <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="location.png" translatesAutoresizingMaskIntoConstraints="NO" id="Jbp-Zr-jMm">
+                                <rect key="frame" x="112" y="117" width="20" height="24"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10:30 AM - 21:30 PM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PiG-PZ-c0L">
+                                <rect key="frame" x="137" y="130" width="124" height="21"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="13"/>
+                                <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Confirm Booking Q" id="8SL-oc-RC4"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="buttonDone" destination="7nn-WZ-cGa" id="Tb9-Ic-lAo"/>
+                        <outlet property="labelBranchName" destination="wcC-Dm-pEb" id="iOY-1L-POG"/>
+                        <outlet property="labelConfirmCode" destination="5cR-6e-d2U" id="Ze8-mU-Rvz"/>
+                        <outlet property="labelEstimateTime" destination="6kU-fy-quZ" id="LxZ-dz-e2B"/>
+                        <outlet property="labelLocation" destination="15g-gv-xUW" id="KSS-0g-Jwn"/>
+                        <outlet property="labelNumberPerson" destination="guV-gV-EYw" id="IAP-QZ-vnm"/>
+                        <outlet property="labelQueueNo" destination="WbW-Ms-Ev0" id="bBm-tz-gD7"/>
+                        <outlet property="labelRemainQueue" destination="uH8-v5-MTR" id="GAF-X7-bOU"/>
+                        <outlet property="labelServiceTime" destination="PiG-PZ-c0L" id="mnF-Zs-X3E"/>
+                        <segue destination="9nr-YZ-otF" kind="push" id="orD-HL-gHI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qng-7C-tzX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4052" y="703"/>
+        </scene>
+        <!--Registration View Controller-->
+        <scene sceneID="dyH-ju-Nl4">
+            <objects>
+                <viewController id="ZNI-3v-zkl" customClass="RegistrationViewController" customModule="SmartQ" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tdq-br-LOW"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZcT-Pf-l8p"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jYT-I3-4x1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="CUy-cM-OHm">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address (Required)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bG4-VK-BWt">
+                                <rect key="frame" x="16" y="100" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name (Required)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iJl-cM-rIJ">
+                                <rect key="frame" x="16" y="140" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name (Required)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wmi-CP-ifK">
+                                <rect key="frame" x="16" y="180" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password (Required)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="109-st-24D">
+                                <rect key="frame" x="16" y="260" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile Phone (Required)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0ZA-x7-hTD">
+                                <rect key="frame" x="16" y="220" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password (Required)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UK9-Oh-Zhe">
+                                <rect key="frame" x="16" y="300" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Registration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h45-7E-g1q">
+                                <rect key="frame" x="71" y="47" width="178" height="32"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="20"/>
+                                <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xph-9v-mC1">
+                                <rect key="frame" x="47" y="374" width="94" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="17"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.32475142045454541" green="0.17797908743833388" blue="0.098867191632031087" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BjD-1I-dhj" kind="unwind" unwindAction="backToLogin:" id="NtK-CD-Mb3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rU9-bF-cLq">
+                                <rect key="frame" x="172" y="374" width="94" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="17"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="0.32475142045454541" green="0.17797908743833388" blue="0.098867191632031087" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="signUpMethod:" destination="ZNI-3v-zkl" eventType="touchUpInside" id="pik-Ae-58Y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <navigationItem key="navigationItem" id="i9e-zp-OVP"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="buttonBack" destination="Xph-9v-mC1" id="6Sw-hQ-KVr"/>
+                        <outlet property="buttonSignUp" destination="rU9-bF-cLq" id="29m-5C-Wwf"/>
+                        <outlet property="txtConfirmPassword" destination="UK9-Oh-Zhe" id="STy-4P-piK"/>
+                        <outlet property="txtEmail" destination="bG4-VK-BWt" id="O65-1H-y5x"/>
+                        <outlet property="txtFirstname" destination="iJl-cM-rIJ" id="5vX-tj-Mtt"/>
+                        <outlet property="txtLastname" destination="Wmi-CP-ifK" id="vx7-wy-NDz"/>
+                        <outlet property="txtMobileNo" destination="0ZA-x7-hTD" id="x7z-r4-muF"/>
+                        <outlet property="txtPassword" destination="109-st-24D" id="68Q-Ju-KgG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MLX-pf-B2c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="BjD-1I-dhj" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1255" y="-669"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Kn6-72-JgW">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Olu-Up-TSO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleAspectFit" id="1pM-eg-aaO">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Xof-Ov-Ogf" kind="relationship" relationship="viewControllers" id="U0E-ov-OGt"/>
+                        <segue destination="Ker-al-7JC" kind="relationship" relationship="viewControllers" id="AIZ-2b-UOM"/>
+                        <segue destination="7Ne-JV-NYY" kind="relationship" relationship="viewControllers" id="NU5-GK-FCi"/>
+                        <segue destination="1Xg-EU-iGy" kind="relationship" relationship="viewControllers" id="jKB-h4-WQ6"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rD8-D2-sxs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="822" y="1846"/>
+        </scene>
+        <!--Restaurant-->
+        <scene sceneID="NQW-3Q-nxG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xof-Ov-Ogf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Restaurant" image="meal-32.png" id="S15-ex-cPg"/>
+                    <toolbarItems/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LbR-Y5-cHf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="djJ-mF-9b7" kind="relationship" relationship="rootViewController" id="iLy-KA-nN6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GMb-6c-UAr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1698" y="414"/>
+        </scene>
+        <!--Main Dept List Table View Controller-->
+        <scene sceneID="sXB-ez-u6C">
+            <objects>
+                <tableViewController title="Main Dept List Table View Controller" id="d03-gq-APE" customClass="MainDeptListTableViewController" customModule="SmartQ" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="yGK-Eo-ecZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="oha-77-7LA">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="d03-gq-APE" id="HsY-YN-qKy"/>
+                            </connections>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" textLabel="cyk-wf-tLl" detailTextLabel="PXs-yW-Ef3" style="IBUITableViewCellStyleValue1" id="uBZ-J5-M48">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uBZ-J5-M48" id="xln-yb-IcV">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cyk-wf-tLl">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PXs-yW-Ef3">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="DNQ-RF-qOB" kind="push" identifier="deptRestSegue" trigger="accessoryAction" id="fdY-Ip-6S3"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="d03-gq-APE" id="afc-Ow-DhN"/>
+                            <outlet property="delegate" destination="d03-gq-APE" id="bCc-wj-nIM"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Shopping Mall" id="c6I-DE-88G">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="usO-th-Ttw"/>
+                    </navigationItem>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="searchBar" destination="oha-77-7LA" id="bjY-N1-Dyl"/>
+                        <outlet property="searchDisplayController" destination="B6M-2S-zgf" id="JeA-J9-k0x"/>
+                        <outlet property="searchLocationList" destination="yGK-Eo-ecZ" id="pFt-Hf-AIh"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V9k-KJ-nBs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ebM-89-8w6" userLabel="Exit" sceneMemberID="exit"/>
+                <searchDisplayController id="B6M-2S-zgf">
+                    <connections>
+                        <outlet property="delegate" destination="d03-gq-APE" id="klX-B0-ucO"/>
+                        <outlet property="searchBar" destination="oha-77-7LA" id="RYy-px-QWK"/>
+                        <outlet property="searchContentsController" destination="d03-gq-APE" id="7MX-v3-RL7"/>
+                        <outlet property="searchResultsDataSource" destination="d03-gq-APE" id="KAn-3G-JCW"/>
+                        <outlet property="searchResultsDelegate" destination="d03-gq-APE" id="yHw-B2-fpy"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="2112" y="1050"/>
+        </scene>
+        <!--My Queue Table View Controller-->
+        <scene sceneID="t4d-nJ-nkS">
+            <objects>
+                <tableViewController title="My Queue Table View Controller" id="9nr-YZ-otF" customClass="MyQueueTableViewController" customModule="SmartQ" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="62" sectionHeaderHeight="22" sectionFooterHeight="22" id="6CO-Vn-ZMI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" textLabel="lce-da-Inh" detailTextLabel="a0Z-Wv-kav" rowHeight="60" style="IBUITableViewCellStyleSubtitle" id="Z0X-fy-0FG">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Z0X-fy-0FG" id="auC-B4-yMM">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lce-da-Inh">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="a0Z-Wv-kav">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="PR7-YP-9lE" kind="push" identifier="viewMyQueueSegue" id="9fE-Rh-i5D"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="9nr-YZ-otF" id="t2p-Zh-lJd"/>
+                            <outlet property="delegate" destination="9nr-YZ-otF" id="sVi-03-mGk"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="My Q" id="gVs-Ui-UxK">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Hah-4M-cz2"/>
+                    </navigationItem>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ADD-Sg-K66" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3338" y="1579"/>
+        </scene>
+        <!--Dept Detail Table View Controller-->
+        <scene sceneID="jGk-6I-vQr">
+            <objects>
+                <tableViewController title="Dept Detail Table View Controller" id="DNQ-RF-qOB" customClass="DeptDetailTableViewController" customModule="SmartQ" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="JiG-0I-Imy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="723-wQ-uJ0">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="DNQ-RF-qOB" id="VIq-4h-c3b"/>
+                            </connections>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" id="KdT-nn-rtj">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KdT-nn-rtj" id="ylW-kN-zVe">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="MUV-dw-fot" kind="push" identifier="branchDeptDetailSegue" trigger="accessoryAction" id="bft-wN-LU5"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="DNQ-RF-qOB" id="t6M-bv-2d5"/>
+                            <outlet property="delegate" destination="DNQ-RF-qOB" id="UHv-df-l6o"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Siam Paragon" id="d7F-ip-zFK">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="4Ti-2e-1go"/>
+                    </navigationItem>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="searchBar" destination="723-wQ-uJ0" id="XPI-PH-6N8"/>
+                        <outlet property="searchDisplayController" destination="5AJ-Na-gNV" id="68l-9l-NXJ"/>
+                        <outlet property="searchRest" destination="JiG-0I-Imy" id="31r-a1-srA"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kBQ-6p-3cq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="5AJ-Na-gNV">
+                    <connections>
+                        <outlet property="delegate" destination="DNQ-RF-qOB" id="lW2-b2-N11"/>
+                        <outlet property="searchBar" destination="723-wQ-uJ0" id="rtD-f9-D8K"/>
+                        <outlet property="searchContentsController" destination="DNQ-RF-qOB" id="ZH8-0t-fm5"/>
+                        <outlet property="searchResultsDataSource" destination="DNQ-RF-qOB" id="4rx-dy-tpY"/>
+                        <outlet property="searchResultsDelegate" destination="DNQ-RF-qOB" id="V9V-em-Lei"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="2532" y="1058"/>
+        </scene>
+        <!--Shopping Mall-->
+        <scene sceneID="U7I-K4-Ii4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ker-al-7JC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Shopping Mall" image="shoppingMall.png" id="LaC-am-CPw"/>
+                    <toolbarItems/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0m2-04-OA7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="d03-gq-APE" kind="relationship" relationship="rootViewController" id="WbS-aK-oi0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JT3-7r-RWx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1698" y="1058"/>
+        </scene>
+        <!--My Q-->
+        <scene sceneID="G6H-0s-m5k">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7Ne-JV-NYY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="My Q" image="myQ.png" id="qYe-p4-h0w"/>
+                    <toolbarItems/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="adq-LU-QAJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9nr-YZ-otF" kind="relationship" relationship="rootViewController" id="E14-qi-AEa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IeS-8p-EPP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1698" y="1713"/>
+        </scene>
+        <!--Settings Table View Controller-->
+        <scene sceneID="5I2-Jv-jrQ">
+            <objects>
+                <tableViewController title="Settings Table View Controller" id="rJD-BH-azO" customClass="SettingsTableViewController" customModule="SmartQ" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="7NX-XR-sx8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="LzT-fc-YEa">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="hij-eE-ba9">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hij-eE-ba9" id="bKi-Tg-Reg">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlH-oG-9Ot">
+                                                    <rect key="frame" x="15" y="12" width="56" height="21"/>
+                                                    <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="15"/>
+                                                    <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="QRT-yp-Fa4" kind="push" identifier="viewProfileSegue" id="rzI-q9-dOq"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="p76-Pm-zUN">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="p76-Pm-zUN" id="0fH-dP-lbu">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Notification" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9EH-yZ-Wpi">
+                                                    <rect key="frame" x="15" y="12" width="112" height="21"/>
+                                                    <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="15"/>
+                                                    <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gFU-l8-JIf">
+                                                    <rect key="frame" x="254" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                </switch>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="h0q-U4-lEe">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="h0q-U4-lEe" id="Eec-Hs-BGX">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXg-vn-Ess">
+                                                    <rect key="frame" x="15" y="8" width="130" height="28"/>
+                                                    <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="15"/>
+                                                    <state key="normal" title="Log Out">
+                                                        <color key="titleColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <segue destination="8sy-qP-lQW" kind="unwind" unwindAction="logoutMethod:" id="Q3n-oE-INA"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="8sy-qP-lQW" kind="unwind" trigger="accessoryAction" unwindAction="logoutMethod:" id="XLT-Yp-HhQ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="rJD-BH-azO" id="Cg0-AB-ZAY"/>
+                            <outlet property="delegate" destination="rJD-BH-azO" id="v9G-ys-yQv"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Settings" id="K84-bI-SiS">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="YOf-d2-Vgl"/>
+                    </navigationItem>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OVl-si-bXi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2459" y="2347"/>
+        </scene>
+        <!--Profile Table View Controller-->
+        <scene sceneID="SVJ-pg-Pau">
+            <objects>
+                <tableViewController title="Profile Table View Controller" id="QRT-yp-Fa4" customClass="ProfileTableViewController" customModule="SmartQ" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="s9B-vg-zWd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="VSB-I2-1Xc">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="XiF-9A-e8b" detailTextLabel="qLY-vY-3LC" style="IBUITableViewCellStyleValue1" id="26m-TC-bsn">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="26m-TC-bsn" id="EN7-f2-spc">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="First Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XiF-9A-e8b">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="15"/>
+                                                    <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qLY-vY-3LC">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="15"/>
+                                                    <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="9MP-6R-dfo" detailTextLabel="h6i-vY-5H6" style="IBUITableViewCellStyleValue1" id="Bao-zB-DPg">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Bao-zB-DPg" id="ov1-QM-5NZ">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Last Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9MP-6R-dfo">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="15"/>
+                                                    <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="h6i-vY-5H6">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="15"/>
+                                                    <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="nQB-3Q-Usm" detailTextLabel="AK9-l7-4t0" style="IBUITableViewCellStyleValue1" id="b5j-MF-Trw">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="b5j-MF-Trw" id="eiE-xE-WG0">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Mobile Phone" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nQB-3Q-Usm">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="15"/>
+                                                    <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AK9-l7-4t0">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="15"/>
+                                                    <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="Mzg-QY-4ke" detailTextLabel="yJq-Sc-dlg" style="IBUITableViewCellStyleValue1" id="boM-hR-0f0">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="boM-hR-0f0" id="YDC-uX-63L">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Email Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mzg-QY-4ke">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="15"/>
+                                                    <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yJq-Sc-dlg">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="15"/>
+                                                    <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="VHK-kH-6Ho" detailTextLabel="NCn-ey-Lj4" style="IBUITableViewCellStyleValue1" id="nSE-WG-aEu">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nSE-WG-aEu" id="ZGs-7R-Ur0">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VHK-kH-6Ho">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="15"/>
+                                                    <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NCn-ey-Lj4">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="15"/>
+                                                    <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="QRT-yp-Fa4" id="tZr-fE-KxE"/>
+                            <outlet property="delegate" destination="QRT-yp-Fa4" id="XNF-da-ndV"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="My Profile" id="u0j-uA-Quy">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="BkQ-Qp-mQE"/>
+                        <barButtonItem key="rightBarButtonItem" image="pencil.png" id="ezE-Z5-xBT">
+                            <color key="tintColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="jPM-NS-Thm" kind="push" identifier="editProfleSegue" id="x24-t1-U4r"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="labelEmail" destination="yJq-Sc-dlg" id="KF0-Ms-NGf"/>
+                        <outlet property="labelFirstname" destination="qLY-vY-3LC" id="bvu-Te-K45"/>
+                        <outlet property="labelLastname" destination="h6i-vY-5H6" id="9U5-Lo-2FW"/>
+                        <outlet property="labelMobile" destination="AK9-l7-4t0" id="FlL-uz-FMq"/>
+                        <outlet property="labelPassword" destination="NCn-ey-Lj4" id="pLa-Yb-oSa"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aef-ux-7XO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2819" y="2347"/>
+        </scene>
+        <!--Edt Profile Table View Controller-->
+        <scene sceneID="4jo-MM-W5t">
+            <objects>
+                <tableViewController title="Edt Profile Table View Controller" id="jPM-NS-Thm" customClass="EditProfileTableViewController" customModule="SmartQ" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="pGg-1H-4vc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="Gyz-ta-lJR">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="5V5-FH-pIV">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5V5-FH-pIV" id="573-5T-tiI">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nse-tk-Pjd">
+                                                    <rect key="frame" x="144" y="7" width="168" height="30"/>
+                                                    <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KwC-6T-dvk">
+                                                    <rect key="frame" x="13" y="11" width="84" height="21"/>
+                                                    <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="15"/>
+                                                    <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="teI-aR-J3K">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="teI-aR-J3K" id="YHT-Kj-PB6">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XIb-dP-cGC">
+                                                    <rect key="frame" x="144" y="7" width="168" height="30"/>
+                                                    <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Last Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEZ-f2-27C">
+                                                    <rect key="frame" x="13" y="11" width="83" height="21"/>
+                                                    <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="15"/>
+                                                    <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="6s3-gt-V30">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6s3-gt-V30" id="fI4-NU-BKv">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mobile Phone" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8jM-qI-M9M">
+                                                    <rect key="frame" x="13" y="11" width="106" height="21"/>
+                                                    <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="15"/>
+                                                    <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j57-yl-2Mj">
+                                                    <rect key="frame" x="144" y="7" width="168" height="30"/>
+                                                    <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="qLc-xE-t3K">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qLc-xE-t3K" id="CSd-OT-MLZ">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVN-r2-8Iz">
+                                                    <rect key="frame" x="13" y="11" width="110" height="21"/>
+                                                    <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="15"/>
+                                                    <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4qS-uI-Plg">
+                                                    <rect key="frame" x="144" y="5" width="168" height="30"/>
+                                                    <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="TEU-3w-g9d">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TEU-3w-g9d" id="fRR-IK-lxi">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1MO-tE-gAt">
+                                                    <rect key="frame" x="15" y="9" width="76" height="21"/>
+                                                    <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="15"/>
+                                                    <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C5I-DQ-mIU">
+                                                    <rect key="frame" x="144" y="5" width="168" height="30"/>
+                                                    <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="45X-LE-rnd">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="45X-LE-rnd" id="iYi-vY-Rw4">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ocg-aM-8xW">
+                                                    <rect key="frame" x="144" y="7" width="168" height="30"/>
+                                                    <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Confirm Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcU-EF-3as">
+                                                    <rect key="frame" x="13" y="11" width="130" height="21"/>
+                                                    <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="15"/>
+                                                    <color key="textColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="jPM-NS-Thm" id="nY3-oF-gET"/>
+                            <outlet property="delegate" destination="jPM-NS-Thm" id="Kxg-ln-j9G"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Edit My Profile" id="yMr-ku-iJD">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="KO5-3y-35o"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="1MJ-7P-A02">
+                            <color key="tintColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="txtConfirmPassword" destination="ocg-aM-8xW" id="Hov-zA-JOR"/>
+                        <outlet property="txtEmail" destination="4qS-uI-Plg" id="bf3-bL-vze"/>
+                        <outlet property="txtFirstname" destination="Nse-tk-Pjd" id="5yM-A7-ts3"/>
+                        <outlet property="txtLastname" destination="XIb-dP-cGC" id="avn-jx-vdF"/>
+                        <outlet property="txtMobile" destination="j57-yl-2Mj" id="HSA-AT-ehB"/>
+                        <outlet property="txtPassword" destination="C5I-DQ-mIU" id="Shr-Ei-T29"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BIH-nz-8lS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3178" y="2347"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="BA5-Ls-lXD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1Xg-EU-iGy" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" image="cog_02.png" id="XjD-fu-SQI"/>
+                    <toolbarItems/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="33x-KN-82Z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rJD-BH-azO" kind="relationship" relationship="rootViewController" id="MQf-gd-oiW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eKQ-KQ-Xml" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1698" y="2347"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SmartQ - OrangeBG.png" width="1446" height="905"/>
+        <image name="bg.jpg" width="640" height="480"/>
+        <image name="buttonBG3.jpg" width="269" height="144"/>
+        <image name="cog_02.png" width="26" height="26"/>
+        <image name="location.png" width="191" height="264"/>
+        <image name="meal-32.png" width="32" height="32"/>
+        <image name="myQ.png" width="32" height="33"/>
+        <image name="pencil.png" width="26" height="26"/>
+        <image name="shoppingMall.png" width="29" height="30"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="bft-wN-LU5"/>
+        <segue reference="E14-qi-AEa"/>
+        <segue reference="9fE-Rh-i5D"/>
+    </inferredMetricsTieBreakers>
+    <color key="tintColor" red="0.3247514205" green="0.17797908740000001" blue="0.098867191630000004" alpha="1" colorSpace="calibratedRGB"/>
+</document>
